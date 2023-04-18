@@ -36,6 +36,33 @@ body {
   padding-bottom: 15.5px;
 }
 
+/*-------------------- Intro --------------------*/
+.intro {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.intro__title {
+  font-size: 24px;
+  margin-top: 39.5px;
+  margin-bottom: 15px;
+}
+.intro__subtitle {
+  font-size: 18px;
+}
+.intro__btn {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-top: 27px;
+  margin-bottom: 27px;
+  width: 200px;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  border-radius: 25px;
+}
+
 /*-------------------- Footer --------------------*/
 .footer {
   background-color: #353535;

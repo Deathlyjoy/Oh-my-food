@@ -4,6 +4,7 @@
 * {
     font-family: $font-primary, sans-serif;
     font-size: 16px;
+    // font-weight: 300;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -31,12 +32,42 @@ body {
 
 /*-------------------- Searchbar --------------------*/
 .searchbar {
-    background-color: $color_semi-light;
+    background-color: $color_semi_light;
     display: flex;
     justify-content: center;
     width: 100%;
     padding-top: 15.5px;
     padding-bottom: 15.5px;
+}
+
+/*-------------------- Intro --------------------*/
+.intro {
+    background-color: $color_light;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+    &__title {
+        font-size: 24px;
+        margin-top: 39.5px;
+        margin-bottom: 15px;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+    }
+
+    &__btn {
+        color: $color_text;
+        text-decoration: none;
+        margin-top: 27px;
+        margin-bottom: 27px;
+        width: 200px;
+        background: linear-gradient(193.33deg, $color_primary -11.44%, $color_secondary 123.93%);
+        border-radius: 25px;
+    }
 }
 
 /*-------------------- Footer --------------------*/
