@@ -29,6 +29,16 @@ body {
     }
 }
 
+/*-------------------- Searchbar --------------------*/
+.searchbar {
+    background-color: $color_semi-light;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 15.5px;
+    padding-bottom: 15.5px;
+}
+
 /*-------------------- Footer --------------------*/
 .footer {
     background-color: $color_dark;
