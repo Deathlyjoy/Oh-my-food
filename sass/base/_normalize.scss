@@ -1,0 +1,23 @@
+/*-------------------- General --------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: $font-primary, sans-serif;
+    font-size: $gen-font-size;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    scroll-behavior: smooth;
+    min-width: 375px;
+    max-width: 1920px;
+}
+
+

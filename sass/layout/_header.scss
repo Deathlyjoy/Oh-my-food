@@ -1,0 +1,13 @@
+/*-------------------- Header --------------------*/
+.header {
+    position: relative;
+    width: 100%;
+    padding: 0.875rem 1rem 0.313rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
+
+    &__logo {
+        font-family: $font-secondary;
+        font-size: 1.875rem;
+        text-align: center;
+    }
+}

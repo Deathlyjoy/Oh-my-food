@@ -1,10 +1,13 @@
 /*-------------------- General --------------------*/
 * {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 body {
@@ -12,21 +15,51 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: auto;
+  scroll-behavior: smooth;
   min-width: 375px;
   max-width: 1920px;
 }
 
 /*-------------------- Header --------------------*/
 .header {
-  display: flex;
-  justify-content: center;
+  position: relative;
   width: 100%;
+  padding: 0.875rem 1rem 0.313rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
 }
 .header__logo {
   font-family: "Shrikhand";
-  font-size: 30px;
-  margin-top: 14px;
-  margin-bottom: 5px;
+  font-size: 1.875rem;
+  text-align: center;
+}
+
+/*-------------------- Footer --------------------*/
+.footer {
+  background-color: #353535;
+  width: 100%;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 25px;
+}
+.footer__logo {
+  filter: invert(100%);
+  width: 30%;
+  margin-bottom: 16px;
+}
+.footer__list {
+  list-style: none;
+}
+.footer__item {
+  margin-bottom: 7px;
+}
+.footer__item:last-child {
+  margin-bottom: 0;
+}
+.footer__link {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 /*-------------------- Searchbar --------------------*/
@@ -55,6 +88,7 @@ body {
 }
 .intro__subtitle {
   font-size: 18px;
+  font-weight: 300;
 }
 .intro__btn {
   color: #FFFFFF;
@@ -128,6 +162,7 @@ body {
   padding-top: 54px;
   padding-left: 17px;
   padding-right: 18px;
+  padding-bottom: 66px;
 }
 .restaurant__title {
   font-size: 24px;
@@ -138,42 +173,24 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #FFFFFF;
+  width: 100%;
   border-radius: 15px;
   margin-top: 18px;
+}
+.card__link {
+  text-decoration: none;
+  color: #000000;
 }
 .card__img {
   object-fit: cover;
   width: 100%;
-  border-radius: 15px;
+  height: 174px;
+  border-radius: 15px 15px 0 0;
 }
-
-/*-------------------- Footer --------------------*/
-.footer {
-  background-color: #353535;
-  width: 100%;
-}
-.footer__content {
+.card__content {
   display: flex;
-  flex-direction: column;
-  padding: 22px 25px;
-}
-.footer__logo {
-  filter: invert(100%);
-  width: 30%;
-  margin-bottom: 16px;
-}
-.footer__list {
-  list-style: none;
-}
-.footer__item {
-  margin-bottom: 7px;
-}
-.footer__item:last-child {
-  margin-bottom: 0;
-}
-.footer__link {
-  color: #FFFFFF;
-  text-decoration: none;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
