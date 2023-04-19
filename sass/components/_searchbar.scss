@@ -1,0 +1,17 @@
+/*-------------------- Searchbar --------------------*/
+.searchbar {
+    background-color: $color_semi_light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0.969rem 1rem;
+
+    &__icon {
+        margin-right: 1.063rem;
+    }
+    
+    &__location {
+        font-weight: 500;
+    }
+}
