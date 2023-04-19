@@ -11,9 +11,12 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: auto;
     min-width: 375px;
-    max-width: 1440px;
+    max-width: 1920px;
 }
 
 /*-------------------- Header --------------------*/
@@ -69,6 +72,100 @@ body {
         border-radius: 25px;
     }
 }
+
+/*-------------------- Tuto --------------------*/
+.tuto {
+    width: 100%;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding: 48px 20px 68px 20px;
+    }
+
+    &__title {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    &__list {
+        list-style: none;
+        counter-reset: index-list;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        background-color: $color_light;
+        border-radius: 20px;
+        margin: 1rem 0 1rem 0.75rem;
+        padding: 1.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            content: counter(index-list) " ";
+            counter-increment: index-list 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            background-color: $color_primary;
+            color: $color_text;
+            font-size: 14px;
+            width: 24px;
+            height: 24px;
+            border-radius: 100%;
+            left: -0.75rem;
+        }
+    }
+
+    &__icon {
+        color: $color_semi_dark;
+        margin-left: 10px;
+        margin-right: 27px;
+    }
+}
+
+/*-------------------- Restaurant --------------------*/
+.restaurant {
+    background-color: $color_light;
+    width: 100%;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding-top: 54px;
+        padding-left: 17px;
+        padding-right: 18px;
+    }
+
+    &__title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: $color_text;
+    border-radius: 15px;
+    margin-top: 18px;
+
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 15px;
+    }
+}
+
+
 
 /*-------------------- Footer --------------------*/
 .footer {
