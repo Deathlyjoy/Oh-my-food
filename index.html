@@ -11,19 +11,23 @@
         <script src="https://kit.fontawesome.com/2f3ff35d61.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <!-- Header -->
         <header class="header">
             <h1 class="header__logo">ohmyfood</h1>
         </header>
         <main>
+            <!-- Searchbar -->
             <section class="searchbar">
                 <i class="searchbar__icon fa-solid fa-location-dot"></i>
                 <p class="searchbar__location">Paris, Belleville</p>
             </section>
+            <!-- Intro -->
             <section class="intro"> 
                 <h2 class="intro__title">Réservez le menu qui vous convient</h2>
                 <p class="intro__subtitle">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
                 <a href="#" class="intro__btn">Explorer nos restaurants</a>
             </section>
+            <!-- Tuto -->
             <section class="tuto">
                 <div class="tuto__content">
                     <h2 class="tuto__title">Fonctionnement</h2>
@@ -43,6 +47,7 @@
                     </ol>
                 </div>
             </section>
+            <!-- Restaurant -->
             <section class="restaurant">
                 <div class="restaurant__content">
                 <h2 class="restaurant__title">Restaurants</h2>
@@ -107,24 +112,23 @@
                 </div>
             </section>
         </main>
+        <!-- Footer -->
         <footer class="footer">
-            <div class="footer__content">
-                <img src="./assets/images/logo/ohmyfood.png" alt="logo OhMyFood" class="footer__logo">
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a href="#" class="footer__link"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Mentions légales</a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Contact</a>
-                    </li>
-                </ul>
-            </div>
+            <img src="./assets/images/logo/ohmyfood.png" alt="logo OhMyFood" class="footer__logo">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#" class="footer__link footer__link--bold"><i class="footer__icon fa-solid fa-utensils fa-xs"></i>Proposer un restaurant</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link footer__link--bold"><i class="footer__icon fa-solid fa-handshake-angle fa-xs"></i>Devenir partenaire</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Mentions légales</a>
+                </li>
+                <li class="footer__item">
+                    <a href="mailto:contact@ohmyfood.com" class="footer__link">Contact</a>
+                </li>
+            </ul>
         </footer>
     </body>
 </html>
