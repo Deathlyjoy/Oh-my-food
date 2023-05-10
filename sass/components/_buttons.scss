@@ -1,0 +1,76 @@
+/*-------------------- Buttons --------------------*/
+/* button like */
+.btn-like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  position: relative;
+  border: transparent 0px solid;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+
+  .icn-like {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 400ms;
+    background-color: white;
+    mix-blend-mode: lighten;
+    width: 100%;
+    height: 100%;
+
+    &--bg {
+      background-color: #f6f6f6;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    opacity: 0;
+    transition-duration: 400ms;
+    background: linear-gradient(193.33deg, $color-primary -11.44%, $color-secondary 123.93%);
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover {
+    .icn-like {
+      &--empty {
+        opacity: 0;
+      }
+    }
+
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+/* button check */
+.btn-validation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-tertiary;
+  transition-duration: 400ms;
+  margin-top: -1rem;
+  margin-right: -5rem;
+  margin-bottom: -1rem;
+  // margin-left: -1rem;
+  width: 4rem;
+
+  .icn-check {
+    color: white;
+    font-size: 20px;
+  }
+}
+
+.card__content {
+  &:hover .btn-validation {
+    margin-right: -1rem;
+  }
+}
