@@ -108,6 +108,7 @@ body {
   margin-right: 1.063rem;
 }
 .searchbar__location {
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -343,11 +344,12 @@ body {
 }
 
 /*-------------------- Restaurant --------------------*/
-.restaurant {
+#restaurant {
   background-color: #F6F6F6;
   width: 100%;
 }
-.restaurant__content {
+
+.resto-content {
   display: flex;
   flex-direction: column;
   padding-top: 54px;
@@ -356,17 +358,17 @@ body {
   padding-bottom: 66px;
 }
 @media (min-width: 64rem) {
-  .restaurant__content {
+  .resto-content {
     padding-left: 180px;
     padding-right: 175px;
   }
 }
-.restaurant__title {
+.resto-content__title {
   font-size: 24px;
   margin-bottom: 10px;
 }
 @media (min-width: 64rem) {
-  .restaurant__card {
+  .resto-content__card {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

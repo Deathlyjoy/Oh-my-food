@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>OhMyFood - Accueil</title>
-        <link rel="stylesheet" href="./assets/css/style.css"/>
+        <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;family=Shrikhand&amp;display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/2f3ff35d61.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -27,13 +27,13 @@
             <!-- Searchbar -->
             <section class="searchbar">
                 <i class="searchbar__icon fa-solid fa-location-dot"></i>
-                <p class="searchbar__location">Paris, Belleville</p>
+                <h2 class="searchbar__location">Paris, Belleville</h2>
             </section>
             <!-- Intro -->
             <section class="intro"> 
                 <h2 class="intro__title">Réservez le menu qui vous convient</h2>
                 <p class="intro__subtitle">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-                <a href="#" class="btn-explore">Explorer nos restaurants</a>
+                <a href="#restaurant" class="btn-explore">Explorer nos restaurants</a>
             </section>
             <!-- Tuto -->
             <section class="tuto">
@@ -56,73 +56,73 @@
                 </div>
             </section>
             <!-- Restaurant -->
-            <section class="restaurant">
-                <div class="restaurant__content">
-                <h2 class="restaurant__title">Restaurants</h2>
-                <div class="restaurant__card">
-                    <article class="card">
-                        <a href="./restaurants/menu-la-palette-du-gout.html" class="card__link">
-                            <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="card__img">
-                            <span class="card__new">Nouveau</span>
-                            <div class="card__content">
-                                <div>
-                                    <h3 class="card__title">La palette du goût</h3>
-                                    <p class="card__subtitle">Ménilmontant</p>
+            <section id="restaurant">
+                <div class="resto-content">
+                    <h2 class="resto-content__title">Restaurants</h2>
+                    <div class="resto-content__card">
+                        <article class="card">
+                            <a href="./restaurants/menu-la-palette-du-gout.html" class="card__link">
+                                <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="card__img" alt="Photo La palette du goût">
+                                <span class="card__new">Nouveau</span>
+                                <div class="card__content">
+                                    <div>
+                                        <h3 class="card__title">La palette du goût</h3>
+                                        <p class="card__subtitle">Ménilmontant</p>
+                                    </div>
+                                    <div class="btn-like">
+                                        <i class="icn-like icn-like--empty fa-sharp fa-regular fa-heart fa-2xl"></i>
+                                        <i class="icn-like fa-sharp fa-solid fa-heart fa-2xl"></i>
+                                    </div>
                                 </div>
-                                <button class="btn-like">
-                                    <i class="icn-like icn-like--empty fa-sharp fa-regular fa-heart fa-2xl"></i>
-                                    <i class="icn-like fa-sharp fa-solid fa-heart fa-2xl"></i>
-                                </button>
-                            </div>
-                        </a>
-                    </article>
-                    <article class="card">
-                        <a href="./restaurants/menu-la-note-enchantee.html" class="card__link">
-                            <img src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" class="card__img">
-                            <span class="card__new">Nouveau</span>
-                            <div class="card__content">
-                                <div>
-                                    <h3 class="card__title">La note enchantée</h3>
-                                    <p class="card__subtitle">Charonne</p>
+                            </a>
+                        </article>
+                        <article class="card">
+                            <a href="./restaurants/menu-la-note-enchantee.html" class="card__link">
+                                <img src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" class="card__img" alt="Photo La note enchantée">
+                                <span class="card__new">Nouveau</span>
+                                <div class="card__content">
+                                    <div>
+                                        <h3 class="card__title">La note enchantée</h3>
+                                        <p class="card__subtitle">Charonne</p>
+                                    </div>
+                                    <div class="btn-like">
+                                        <i class="icn-like icn-like--empty fa-sharp fa-regular fa-heart fa-2xl"></i>
+                                        <i class="icn-like fa-sharp fa-solid fa-heart fa-2xl"></i>
+                                    </div>
                                 </div>
-                                <button class="btn-like">
-                                    <i class="icn-like icn-like--empty fa-sharp fa-regular fa-heart fa-2xl"></i>
-                                    <i class="icn-like fa-sharp fa-solid fa-heart fa-2xl"></i>
-                                </button>
-                            </div>
-                        </a>
-                    </article>
-                    <article class="card">
-                        <a href="./restaurants/menu-a-la-francaise.html" class="card__link">
-                            <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" class="card__img">
-                            <div class="card__content">
-                                <div>
-                                    <h3 class="card__title">À la française</h3>
-                                    <p class="card__subtitle">Cité Rouge</p>
+                            </a>
+                        </article>
+                        <article class="card">
+                            <a href="./restaurants/menu-a-la-francaise.html" class="card__link">
+                                <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" class="card__img" alt="Photo À la française">
+                                <div class="card__content">
+                                    <div>
+                                        <h3 class="card__title">À la française</h3>
+                                        <p class="card__subtitle">Cité Rouge</p>
+                                    </div>
+                                    <div class="btn-like">
+                                        <i class="icn-like icn-like--empty fa-sharp fa-regular fa-heart fa-2xl"></i>
+                                        <i class="icn-like fa-sharp fa-solid fa-heart fa-2xl"></i>
+                                    </div>
                                 </div>
-                                <button class="btn-like">
-                                    <i class="icn-like icn-like--empty fa-sharp fa-regular fa-heart fa-2xl"></i>
-                                    <i class="icn-like fa-sharp fa-solid fa-heart fa-2xl"></i>
-                                </button>
-                            </div>
-                        </a>
-                    </article>
-                    <article class="card">
-                        <a href="./restaurants/menu-le-delice-des-sens.html" class="card__link">
-                            <img src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" class="card__img">
-                            <div class="card__content">
-                                <div>
-                                    <h3 class="card__title">Le délice des sens</h3>
-                                    <p class="card__subtitle">Folie-Méricourt</p>
+                            </a>
+                        </article>
+                        <article class="card">
+                            <a href="./restaurants/menu-le-delice-des-sens.html" class="card__link">
+                                <img src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" class="card__img" alt="Photo Le délice des sens" >
+                                <div class="card__content">
+                                    <div>
+                                        <h3 class="card__title">Le délice des sens</h3>
+                                        <p class="card__subtitle">Folie-Méricourt</p>
+                                    </div>
+                                    <div class="btn-like">
+                                        <i class="icn-like icn-like--empty fa-sharp fa-regular fa-heart fa-2xl"></i>
+                                        <i class="icn-like fa-sharp fa-solid fa-heart fa-2xl"></i>
+                                    </div>
                                 </div>
-                                <button class="btn-like">
-                                    <i class="icn-like icn-like--empty fa-sharp fa-regular fa-heart fa-2xl"></i>
-                                    <i class="icn-like fa-sharp fa-solid fa-heart fa-2xl"></i>
-                                </button>
-                            </div>
-                        </a>
-                    </article>
-                </div>
+                            </a>
+                        </article>
+                    </div>
                 </div>
             </section>
         </main>

@@ -119,22 +119,21 @@
 }
 
 /*-------------------- Restaurant --------------------*/
-.restaurant {
+#restaurant {
     background-color: $color_light;
     width: 100%;
+}
+.resto-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 54px;
+    padding-left: 17px;
+    padding-right: 18px;
+    padding-bottom: 66px;
 
-    &__content {
-        display: flex;
-        flex-direction: column;
-        padding-top: 54px;
-        padding-left: 17px;
-        padding-right: 18px;
-        padding-bottom: 66px;
-
-        @media (min-width: 64rem) {
-            padding-left: 180px;
-            padding-right: 175px;
-        }
+    @media (min-width: 64rem) {
+        padding-left: 180px;
+        padding-right: 175px;
     }
 
     &__title {
