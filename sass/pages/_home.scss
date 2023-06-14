@@ -141,6 +141,8 @@
     @media (min-width: 64rem) {
         display: flex;
         justify-content: center;
+        padding-left: 175px;
+        padding-right: 175px;
     }
 
     &__title {
@@ -171,7 +173,8 @@
     cursor: pointer;
 
     @media (min-width: 64rem) {
-        width: 490px;
+        // width: 490px;
+        width: 48%;
         height: 253px;
 
         // &:nth-child(3) {
